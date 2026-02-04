@@ -1,0 +1,141 @@
+/**
+ * Profile page styles
+ */
+
+.container {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.error_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-height: 50vh;
+  color: hsl(var(--muted-foreground));
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: hsl(var(--foreground));
+}
+
+@media (min-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+}
+
+.subtitle {
+  color: hsl(var(--muted-foreground));
+  margin-top: 0.25rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Avatar card */
+.avatar_card {
+  overflow: visible;
+}
+
+.avatar_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .avatar_content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.avatar_actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.file_input {
+  display: none;
+}
+
+.url_form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .url_form {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .url_form input {
+    flex: 1;
+  }
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.field_error {
+  font-size: 0.75rem;
+  color: hsl(var(--destructive));
+}
+
+.field_hint {
+  font-size: 0.75rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.email_field {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.email_field input {
+  flex: 1;
+}

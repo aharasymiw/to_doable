@@ -1,0 +1,64 @@
+/**
+ * Avatar styles
+ * Based on shadcn/ui Avatar
+ */
+
+.avatar {
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+/* Sizes */
+.size_default {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.size_sm {
+  width: 2rem;
+  height: 2rem;
+}
+
+.size_lg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.size_xl {
+  width: 5rem;
+  height: 5rem;
+}
+
+.image {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(var(--muted));
+  color: hsl(var(--muted-foreground));
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.size_sm .fallback {
+  font-size: 0.75rem;
+}
+
+.size_lg .fallback {
+  font-size: 1rem;
+}
+
+.size_xl .fallback {
+  font-size: 1.25rem;
+}

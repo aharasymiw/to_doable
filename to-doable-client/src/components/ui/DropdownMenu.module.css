@@ -1,0 +1,118 @@
+/**
+ * DropdownMenu styles
+ * Based on shadcn/ui DropdownMenu
+ */
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  transition: background-color var(--transition-fast);
+}
+
+.trigger:hover {
+  background-color: hsl(var(--accent));
+}
+
+.content {
+  position: absolute;
+  top: 100%;
+  z-index: 50;
+  min-width: 8rem;
+  margin-top: 0.25rem;
+  padding: 0.25rem;
+  border-radius: var(--radius);
+  border: 1px solid hsl(var(--border));
+  background-color: hsl(var(--popover));
+  color: hsl(var(--popover-foreground));
+  box-shadow: var(--shadow-md);
+  animation: fade-in var(--transition-fast) ease-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.align_start {
+  left: 0;
+}
+
+.align_center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.align_end {
+  right: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  text-align: left;
+  border: none;
+  background: transparent;
+  color: hsl(var(--foreground));
+  cursor: pointer;
+  border-radius: calc(var(--radius) - 2px);
+  transition: background-color var(--transition-fast);
+}
+
+.item:hover:not(:disabled) {
+  background-color: hsl(var(--accent));
+  color: hsl(var(--accent-foreground));
+}
+
+.item:focus {
+  outline: none;
+  background-color: hsl(var(--accent));
+}
+
+.item.destructive {
+  color: hsl(var(--destructive));
+}
+
+.item.destructive:hover:not(:disabled) {
+  background-color: hsl(var(--destructive));
+  color: hsl(var(--destructive-foreground));
+}
+
+.item.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.separator {
+  height: 1px;
+  margin: 0.25rem -0.25rem;
+  background-color: hsl(var(--border));
+}
+
+.label {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: hsl(var(--muted-foreground));
+}

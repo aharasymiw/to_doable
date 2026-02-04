@@ -1,0 +1,40 @@
+/**
+ * Spinner styles
+ */
+
+.spinner {
+  animation: spin 1s linear infinite;
+  color: hsl(var(--primary));
+}
+
+.size_sm {
+  width: 1rem;
+  height: 1rem;
+}
+
+.size_default {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.size_lg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.track {
+  opacity: 0.25;
+}
+
+.path {
+  opacity: 0.75;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

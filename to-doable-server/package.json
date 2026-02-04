@@ -1,0 +1,36 @@
+{
+  "name": "to-doable-server",
+  "version": "1.0.0",
+  "description": "Backend server for To-Doable - a local-first, mobile-first reactive web app",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch --env-file=.env src/index.js",
+    "migrate": "node src/db/migrate.js",
+    "seed": "node src/db/seed.js"
+  },
+  "keywords": [
+    "express",
+    "postgresql",
+    "jwt",
+    "local-first"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.712.0",
+    "@aws-sdk/client-ses": "^3.712.0",
+    "@aws-sdk/s3-request-presigner": "^3.982.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "pg": "^8.13.1",
+    "sharp": "^0.33.5",
+    "uuid": "^11.0.3"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

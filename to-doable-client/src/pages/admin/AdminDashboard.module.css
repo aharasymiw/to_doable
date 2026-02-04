@@ -1,0 +1,177 @@
+/**
+ * Admin dashboard styles
+ */
+
+.container {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+}
+
+.subtitle {
+  color: hsl(var(--muted-foreground));
+  margin: 0;
+  margin-top: 0.25rem;
+}
+
+/* Filters */
+.filters {
+  margin-bottom: 1.5rem;
+}
+
+.filters_content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .filters_content {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.search_input {
+  flex: 1;
+}
+
+/* Loading */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20rem;
+}
+
+/* Empty state */
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 10rem;
+  color: hsl(var(--muted-foreground));
+}
+
+/* User list */
+.user_list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.user_card {
+  transition: box-shadow var(--transition-fast);
+}
+
+.user_card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.user_content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .user_content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.user_info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user_details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.user_name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.user_name span:first-child {
+  font-weight: 600;
+}
+
+.user_email {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.user_date {
+  font-size: 0.75rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.user_actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.page_info {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+}
+
+/* Delete dialog */
+.delete_warning {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+  margin: 0;
+}

@@ -1,0 +1,77 @@
+/**
+ * Verification banner styles
+ */
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius);
+  background-color: hsl(var(--warning) / 0.1);
+  border: 1px solid hsl(var(--warning) / 0.3);
+  color: hsl(var(--foreground));
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.icon {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  color: hsl(var(--warning));
+}
+
+.content p {
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.email {
+  color: hsl(var(--muted-foreground));
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.dismiss {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+  background: transparent;
+  color: hsl(var(--muted-foreground));
+  cursor: pointer;
+  border-radius: var(--radius);
+  opacity: 0.7;
+  transition: opacity var(--transition-fast);
+}
+
+.dismiss:hover {
+  opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

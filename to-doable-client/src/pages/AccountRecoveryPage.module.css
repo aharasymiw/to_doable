@@ -1,0 +1,76 @@
+/**
+ * Account recovery page styles
+ */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: hsl(var(--muted));
+}
+
+.card {
+  width: 100%;
+  max-width: 28rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.info p {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.info strong {
+  color: hsl(var(--foreground));
+}
+
+.warning {
+  padding: 0.75rem;
+  border-radius: var(--radius);
+  background-color: hsl(var(--warning) / 0.1);
+  border: 1px solid hsl(var(--warning) / 0.3);
+  color: hsl(var(--foreground));
+  font-size: 0.875rem;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.recover_btn {
+  width: 100%;
+}
+
+.dialog_content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.error {
+  padding: 0.75rem;
+  border-radius: var(--radius);
+  background-color: hsl(var(--destructive) / 0.1);
+  color: hsl(var(--destructive));
+  font-size: 0.875rem;
+}
